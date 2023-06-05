@@ -1,17 +1,4 @@
 #<INICIO DO SCRIPT>
-
-#>>>>>>>>VARIAVEIS<<<<<<<<<<
-global ssid "CSA-XXX"
-global pool "10.24.XXX.5-10.24.XXX.10"
-global networkwifi "10.24.XXX.0"
-global ipaddress1 "10.24.XXX.1/26"
-global ipaddress0 "10.24.XXX.0/26"
-global gatewaywifi "10.24.XXX.1"
-#Confira a subrede na RB EM: >IP > DHCP SERVER > NETWORK - LAN
-global networklan "!172.19.XXX.0/24"
-#Nome da interface ppoe, se for dhcp client, usar o gateway que é entregue pelo provedor. 
-global nameinterfaceprovedor "pppoe-out-WAN-PROVEDOR"
-
 #Criar bridge
 /interface bridge
 add name=bridge-vlan804
